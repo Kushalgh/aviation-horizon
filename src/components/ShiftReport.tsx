@@ -2,9 +2,6 @@ import { useState } from 'react';
 import { useAircraftStore } from '../store/useAircraftStore';
 import { BrowserProvider, parseEther } from 'ethers';
 
-// Antigravity testnet RPC (placeholder chainId 80001)
-const CHAIN_ID = '0x13881';
-const CHAIN_NAME = 'Antigravity Testnet';
 
 export function ShiftReport() {
   const [status, setStatus] = useState<'idle' | 'connecting' | 'pending' | 'done' | 'error'>('idle');

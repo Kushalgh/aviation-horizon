@@ -54,7 +54,7 @@ export function randomCallsign(): string {
 
 /** Seed 5 random aircraft */
 export function seedAircraft(): Aircraft[] {
-  return Array.from({ length: 5 }, (_, i) => ({
+  return Array.from({ length: 5 }, () => ({
     id: crypto.randomUUID(),
     callsign: randomCallsign(),
     x: 0.1 + Math.random() * 0.8,

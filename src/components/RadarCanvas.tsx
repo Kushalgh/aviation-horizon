@@ -1,6 +1,5 @@
 import { useEffect, useRef, useCallback } from 'react';
 import { useAircraftStore } from '../store/useAircraftStore';
-import type { Aircraft } from '../types';
 import { initAudio, playSelect, playSweepPing } from '../utils/audioUtils';
 const SWEEP_SPEED = 0.8; // degrees per frame
 const TRAIL_LENGTH = 6;
